@@ -51,7 +51,7 @@ def main():
                       help="print out all the query results")
     (options, args) = parser.parse_args()
     if not options.dataset:   # if dataset is not given
-    parser.error('dataset not given')
+        parser.error('dataset not given')
     dataset = options.dataset
     verbose = options.verbose
 
